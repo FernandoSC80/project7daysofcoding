@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-cinza: #667085;
+    --cor-cinzaclaro: rgb(187, 203, 235);
+    --cor-vermelho: #8E2424;
+    --cor-vermelhoclaro: #e0bbbb;
+    --cor-branco: #ffffff;
+    --cor-azul: #4533e6;
+    --cor-preto: #000000;
+    --cor-pretometricas: #101828;
+    --font-cabeçalho: "Inter";
+
+}
+
+.cabeçalho { /* Issue: posição do cabeçalho, precisa ser mais deslocado para a esquerda */
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 5em;
+}
+
+.container__páginas {
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-family: var(--font-cabeçalho);
+    font-size: 16px;
+    font-weight: medium;
+    margin: 2em;
+}
+
+.container__botões {
+    text-decoration: none;
+    color: var(--cor-cinza);
+    font-family: var(--font-cabeçalho);
+    font-size: 16px;
+    font-weight: medium;
+    margin: 2em;
+}
+
+.container__botões__link {
+    text-decoration: none;
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    padding: 18px 40px;
+    border-radius: 5px;
+}
+
+.container__botões__link:hover {
+    background-color: var(--cor-cinza);
+    color: var(--cor-preto);
+}
+
+.container__páginas:hover {
+    color: var(--cor-preto);
+}
+
+.container__botões:hover {
+    color: var(--cor-preto);
+}
+
+.cabeçalho__cabeçalho {
+    text-align: center;
+    margin: 5em;
+}
+
+.cabeçalho__cabeçalho__apresentação {
+    color: var(--cor-vermelho);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.cabeçalho__cabeçalho__título {
+    color: var(--cor-preto);
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.cabeçalho__cabeçalho__texto {
+    color: var(--cor-cinza);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.métricas { /* issue: valores das métricas estão muito afastados dos títulos */
+    display: flex;
+    justify-content: space-between;
+}
+
+.métricas__grupos {
+    margin: 4em;
+}
+
+.métricas__grupos__números {
+    color: var(--cor-vermelho);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.métricas__grupos__títulos {
+    color: var(--cor-pretometricas);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.métricas__grupos__parágrafos {
+    color: var(--cor-cinza);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.vagas {
+    text-align: center;
+}
+
+.vagas__informações {
+    padding: 1em;
+}
+
+.vagas__informações__anúncio {
+    background-color: var(--cor-vermelhoclaro);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-vermelho);
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.vagas__informações__título {
+    padding: 1em 0em 0em 0em;
+}
+
+.vagas__informações__parágrafo {
+    padding: 1em;
+}
+
+.seção__grupos__principal {
+    font-family: var(--font-cabeçalho);
+    color: var(--cor-preto);
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0em 28em;
+    padding: 2em 0em;
+}
+
+.seção__grupos__principal__vaga {
+    border: 2px solid var(--cor-cinzaclaro);
+    border-radius: 20px;
+    margin: 2em 38em;
+    padding: 2em 2em;
+}
+
+.seção__grupos__principal__vaga__título {
+    font-family: var(--font-cabeçalho);
+    color: var(--cor-preto);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.parágrafo { /*issue: não consigo fazer as informações dos paragrafos ficarem lado a lado e com espaço */
+    display: block;
+    margin: 0 auto;
+}
+
+.seção__grupos__principal__vaga__parágrafo {
+    font-family: var(--font-cabeçalho);
+    color: var(--cor-cinza);
+    font-weight: 500;
+    font-size: 16px;
+}
