@@ -26,7 +26,7 @@
     color: var(--cor-cinza);
     font-family: var(--font-cabeçalho);
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
     margin: 2em;
 }
 
@@ -35,7 +35,7 @@
     color: var(--cor-cinza);
     font-family: var(--font-cabeçalho);
     font-size: 16px;
-    font-weight: medium;
+    font-weight: 500;
     margin: 2em;
 }
 
@@ -45,6 +45,9 @@
     background-color: var(--cor-vermelho);
     padding: 18px 40px;
     border-radius: 5px;
+    font-family: var(--font-cabeçalho);
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .container__botões__link:hover {
@@ -78,6 +81,7 @@
 }
 
 .cabeçalho__cabeçalho__texto {
+    font-family: var(--font-cabeçalho);
     color: var(--cor-cinza);
     font-weight: 400;
     font-size: 20px;
@@ -93,18 +97,21 @@
 }
 
 .métricas__grupos__números {
+    font-family: var(--font-cabeçalho);
     color: var(--cor-vermelho);
     font-size: 60px;
     font-weight: 600;
 }
 
 .métricas__grupos__títulos {
+    font-family: var(--font-cabeçalho);
     color: var(--cor-pretometricas);
     font-size: 18px;
     font-weight: 500;
 }
 
 .métricas__grupos__parágrafos {
+    font-family: var(--font-cabeçalho);
     color: var(--cor-cinza);
     font-size: 16px;
     font-weight: 400;
@@ -113,6 +120,7 @@
 
 .vagas {
     text-align: center;
+    font-family: var(--font-cabeçalho);
 }
 
 .vagas__informações {
@@ -258,4 +266,133 @@
 .cadastro__botão:hover {
     background-color: var(--cor-vermelhoclaro);
     color: var(--cor-preto);
+}
+
+@media screen and (max-width: 430px) {
+
+    .logo__celular {
+        display: none;
+    }
+
+    .cabeçalho {
+        padding: 1em;
+    }
+
+    .container__páginas {
+        font-size: 12px;
+        margin: 0em 0.5em;
+    }
+
+    .container__botões {
+        font-size: 12px;
+        margin: 0em 0.5em;
+    }
+
+    .container__botões__link {
+        font-size: 11px;
+        padding: 1em 1em;
+    }
+
+    .cabeçalho__cabeçalho__título {
+        font-size: 24px;
+    }
+
+    .cabeçalho__cabeçalho__texto {
+        font-size: 12px;
+    }
+
+    .cabeçalho__cabeçalho {
+        margin: 1em 2em;
+    }
+
+    .métricas__grupos {
+        margin: 1em 0.4em;
+        padding: 1em 0.1em;
+    }
+
+    .métricas__grupos__números {
+        font-size: 30px;
+    }
+
+    .métricas__grupos__títulos {
+        font-size: 10px;
+    }
+
+    .métricas__grupos__parágrafos {
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .vagas__informações__foto {
+        width: 100%;
+    }
+    
+    .vagas__informações__título {
+        font-size: 12px;
+    }
+
+    .vagas__informações__parágrafo {
+        font-size: 10px;
+    }
+
+    .vagas__informações__anúncio {
+        font-size: 10px;
+    }
+
+    .seção__grupos__principal {
+        font-size: 12px;
+        margin: 0em 6em;
+        padding: 2em 0em;
+    }
+
+    .seção__grupos__principal__vaga {
+        margin: 1em 4em;
+        padding: 1em 1em;
+    }
+    
+    .seção__grupos__principal__vaga__título {
+        font-size: 10px;
+    }
+
+    .seção__grupos__principal__vaga__parágrafo {
+        font-size: 10px;
+    }
+
+    .opiniões {
+        margin: 1em 1em;
+        font-size: 10px;
+    }
+
+    .opiniões__texto {
+        font-size: 18px;
+        padding: 0em 2em;
+    }
+
+    .opiniões__nome {
+        font-size: 10px;
+    }
+
+    .opiniões__função {
+        font-size: 10px;
+    }
+
+    .cadastro__título {
+        font-size: 18px;
+    }
+
+    .cadastro__parágrafo {
+        font-size: 10px;
+    }
+
+    .cadastro__email {
+        padding: 1em 6em 1em 6em;
+    }
+
+    .cadastro__botão {
+        font-size: 10px;
+    }
+
+    .cadastro__copyright {
+        font-size: 10px;
+    }
 }
